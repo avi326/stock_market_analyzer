@@ -1,6 +1,8 @@
 # Stock Market Sentiment Dashboard
 
 This is a Streamlit app that provides an overview of the stock market sentiment based on recent Google News articles. The app analyzes the sentiment of stock market-related news articles, and displays a bar chart to visualize the sentiment ratings for each stock, as well as a table with reasons behind each sentiment.
+ streamlit run main.py 
+
 
 ![Dashboard Screenshot](a.png)
 
@@ -15,7 +17,9 @@ The app requires the following Python packages:
 - openai
 
 Install the dependencies with the following command:
-
+```bash
+pip install -r requirements.txt
+```
 
 ## Configuration
 
@@ -27,7 +31,9 @@ The app requires a `.env` file in the project root directory with the following 
 ## Usage
 
 To run the Streamlit app, navigate to the project directory and execute the following command:
-
+```bash
+streamlit run main.py 
+```
 
 ## Code Overview
 
