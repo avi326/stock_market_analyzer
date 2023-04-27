@@ -4,7 +4,7 @@ This is a Streamlit app that provides an overview of the stock market sentiment 
  streamlit run main.py 
 
 
-![Dashboard Screenshot](a.png)
+![Dashboard Screenshot](screenshot.png)
 
 ## Dependencies
 
