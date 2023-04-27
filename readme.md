@@ -21,9 +21,8 @@ pip install -r requirements.txt
 
 ## Configuration
 
-The app requires a `.env` file in the project root directory with the following keys:
+The app requires a `.env` file in the project root directory with the following key:
 
-- `RAPIDAPI_KEY`: Your RapidAPI key for accessing Global Stock Market API.
 - `OPENAI_KEY`: Your OpenAI API key for using the ChatGPT language model.
 
 ## Usage
