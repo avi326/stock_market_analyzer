@@ -1,8 +1,6 @@
 # Stock Market Sentiment Dashboard
 
 This is a Streamlit app that provides an overview of the stock market sentiment based on recent Google News articles. The app analyzes the sentiment of stock market-related news articles, and displays a bar chart to visualize the sentiment ratings for each stock, as well as a table with reasons behind each sentiment.
- streamlit run main.py 
-
 
 ![Dashboard Screenshot](screenshot.png)
 
