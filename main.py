@@ -36,11 +36,20 @@ st.title("Stock Sentiment Analysis")
 # Create a bar chart for sentiment ratings
 st.subheader("Sentiment Ratings")
 chart_data = df[["stock_symbol", "sentiment_rating"]].set_index("stock_symbol")
-st.bar_chart(chart_data)
 
 # Display reasons in a table
 st.subheader("Reasons for Sentiment")
-for _, row in df.iterrows():
-    st.write(f"{row['stock_symbol']} Reasons:")
-    reason_data = pd.DataFrame(row["reasons"], columns=["Reasons"])
-    st.table(reason_data)
+
+# Create two columns with equal width
+col1, col2 = st.columns(2)
+
+# Display the bar chart in the first column
+with col1:
+    st.bar_chart(chart_data)
+
+# Loop through the DataFrame and display the reasons table in the second column
+with col2:
+    for _, row in df.iterrows():
+        st.write(f"{row['stock_symbol']} Reasons:")
+        reason_data = pd.DataFrame(row["reasons"], columns=["Reasons"])
+        st.table(reason_data)
